@@ -1,0 +1,99 @@
+:root{
+    --color-fondo: #0D0D0D;
+    --color-secundario: #1A1A1A;
+    --color-rojo: #FF3B30;
+    --color-naranja: #FF9500;
+    --color-amarillo: #FFD60A;
+    --color-texto: #F5F5F5;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+header {
+    padding: 20px;
+}
+.titulo {
+    color: var(--color-amarillo);
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-shadow: 
+    0 0 5px #FFD60A,
+    0 0 10px #FF9500,
+    0 0 20px #FF3B30;
+
+    margin: 0;
+}
+#about-us{
+    position: relative;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 50px;
+}
+
+.logo{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0.3;
+
+    z-index: 1;
+}
+
+.bienvenida{
+    position: relative;
+    z-index: 2;
+
+    max-width: 500px;
+
+    color: white;
+}
+
+.sobre-titulo h2{
+    font-size: 80px;
+    line-height: 75px;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    color: #FFD60A;
+}
+
+.bienvenida p{
+    font-size: 28px;
+
+    line-height: 40px;
+}
+
+.descripcion{
+    position: relative;
+    z-index: 2;
+
+    color: white;
+
+    max-width: 600px;
+
+    margin-left: 100px;
+}
+.blanco {
+    color: white;
+}
+.amarillo {
+    color: #FFD60A;
+}
