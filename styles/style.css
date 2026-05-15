@@ -6,12 +6,19 @@
     --color-amarillo: #FFD60A;
     --color-texto: #F5F5F5;
 }
-body {
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-}
 header {
-    padding: 20px;
+    position: fixed;        
+    top: 0;                 
+    left: 0;                
+    width: 100%;            
+    z-index: 1000;          
+    background-color: #0d0d0d; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); 
+}
+body {
+    margin: 0;
+    padding-top: 80px;      
+    background-color: var(--color-fondo)
 }
 .titulo {
     color: var(--color-amarillo);
@@ -112,7 +119,7 @@ header {
 }
 .contacto-item h3{
     margin-bottom:10px;
-    color:#ff4444;
+    color:#ffaa00;
 }
 .contacto-item a{
     display:inline-block;
@@ -137,7 +144,7 @@ header nav {
 .titulo {
     color: #ffaa00;            
     margin: 0;                 
-    font-size: 24px;
+    font-size: 35px;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255, 170, 0, 0.7); 
 }
@@ -149,9 +156,9 @@ header nav ul {
     gap: 25px;                 
 }
 header nav ul li a {
-    color: #4a6fa5;            
+    color: #e2e631;            
     text-decoration: none;     
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -269,4 +276,26 @@ p {
     padding: 20px;
     text-align: center;
     margin-top: 30px;
+}
+.action-btn {
+    background: none;
+    border: none;
+    padding: 6px;
+    color: rgb(21, 248, 70);         
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.action-btn:hover {
+    color: rgb(246, 250, 14);         
+    transform: scale(1.15); 
+}
+.btn-comprar:hover {
+    animation: bounce-icon 0.5s ease-in-out infinite alternate;
+}
+@keyframes bounce-icon {
+    0% { transform: translateY(0) scale(1.15); }
+    100% { transform: translateY(-4px) scale(1.15); }
 }
